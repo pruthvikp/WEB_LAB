@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demonstrations</title>
+    <style>
+        /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Font styles */
+.font-serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.font-sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Background image repeat */
+.background-no-repeat, .background-repeat, .background-repeat-x, .background-repeat-y {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    background-image: url('https://via.placeholder.com/50');
+}
+
+.background-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.background-repeat {
+    background-repeat: repeat;
+}
+
+.background-repeat-x {
+    background-repeat: repeat-x;
+}
+
+.background-repeat-y {
+    background-repeat: repeat-y;
+}
+
+/* Link styles */
+a.link {
+    text-decoration: none;
+    color: #0000EE;
+}
+
+a.link:link {
+    color: #0000EE; /* Blue */
+}
+
+a.link:visited {
+    color: #551A8B; /* Purple */
+}
+
+a.link:hover {
+    color: #FF00FF; /* Magenta */
+}
+
+a.link:active {
+    color: #FF0000; /* Red */
+}
+
+.visible {
+    visibility: visible;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Demonstrations</h1>
+    </header>
+    <section>
+        <h2>Different Font Styles</h2>
+        <p class="font-serif">This is a paragraph with a serif font.</p>
+        <p class="font-sans-serif">This is a paragraph with a sans-serif font.</p>
+        <p class="font-monospace">This is a paragraph with a monospace font.</p>
+    </section>
+    <section>
+        <h2>Background Image Repeat</h2>
+        <div class="background-no-repeat">No Repeat</div>
+        <div class="background-repeat">Repeat</div>
+        <div class="background-repeat-x">Repeat-X</div>
+        <div class="background-repeat-y">Repeat-Y</div>
+    </section>
+    <section>
+        <h2>Styled Links</h2>
+        <a href="#" class="link">This is a normal link</a><br>
+        <a href="#" class="link" id="active">This is an active link</a><br>
+        <a href="#" class="link">This is a hovered link</a><br>
+        <a href="#" class="link" id="visited">This is a visited link</a>
+    </section>
+    <section>
+        <h2>Element Visibility</h2>
+        <div class="visible">This element is visible.</div>
+        <div class="hidden">This element is hidden.</div>
+    </section>
+</body>
+</html>
