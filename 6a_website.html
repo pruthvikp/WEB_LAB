@@ -1,102 +1,95 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>JSSSTU</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-        nav{
+        .nav{
             display: flex;
             justify-content: space-evenly;
-            background-color: lightblue;
-            text-align: center;
-            height: 35px;
-           padding-top: 18px;
+            background-color: aqua;
+            height: 30px;
+            align-items: center;
+            padding-left: 20%; 
+            padding-right: 20%;
         }
         a{
-            color: black;
-            margin-right: 10px;
+            margin-left: 5px;
+        }
+        section{
+            margin-top: 40px;
+            text-align: center;
+            align-items: center;
         }
         #about{
-            text-align: center;
-            background-color: aquamarine;
-            height: 200px;
-            padding: 20px;
-            color:black
-        }
-        button{
-            background-color: orange;
-            color: black;
-            height: 25px;
+            background-color:rgb(245, 93, 38);
+            height: 150px;
+            padding-top: 10px;
         }
         #links{
-            background-color: lightblue;
-            text-align: center;
-            margin-top: 0px;
-            height: 230px;
             display: flex;
-            justify-content: space-around;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: cornsilk;
         }
-        #title{
-            background-color: lightblue;
-            height: 50px;
-            padding-top: 5px;
-            margin-top: 0px;
+        .contact{
+            padding-right: 10%;
         }
         footer{
-            background-color: aquamarine;
+            background-color: rgb(223, 169, 219);
+            height: 20px;
+            align-items: center;
             text-align: center;
-            height: 30px;
+            margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
-    <nav>
-        <div>
-            <a href="#about">About</a>
-            <a href="#">Academic</a>
-            <a href="#">Research</a>
-            <a href="#">Programmes</a>
-            <a href="#">Placement</a>
-            <a href="#">Time Table</a>
-            <a href="#links">Contact</a>
-        </div>
-    </nav>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#">Academic</a>
+        <a href="#">Programmes</a>
+        <a href="#">Research</a>
+        <a href="#">Timetable</a>
+        <a href="#">Placements</a>
+        <a href="#links">Contact</a>
+    </div>
     <main>
         <section id="about">
-            <h1 style="color: blue; font-weight: bold;">Welcome To Our Campus</h1>
-            <p>
-                JSS STU University is built on a strong reputation of SJCE, Mysuru, and passionately committed for providing education in Science, Technology, Engineering & Mathematics (STEM) and Management. It is Steadfast to find solutions to some of the great challenges of our time through scientific research and technological innovations. The institution also has the reputation of academic excellence in professionally oriented programs, and equal proficiency in extra-curricular activities, which makes it a lucrative option for students from all over the country, especially those staying in remote places eyeing at Science and Engineering career.
-            </p>
-            <button>READ MORE</button>
+            <h2>About</h2>
+            JSS Science and Technology(Formerly known as Sri Jayachamarajendra College of Engineering)
+            offers various courses across different branches of Engineering which include Computer Science, 
+            Information Science, Electronics and Communication etc. It also has various sports, cultural and 
+            technical clubs which the students can join as per their interest.
         </section>
-        <section id ="title">
-            <center><h2>Additional links</h2></center>
-        </section>
-        <section id="links">
-            <div >
-                <h4>JSS Science and Technology University</h4>
-                <p>0821-123456</p>
-                <p>0821-678987</p>
-                <p>contact@jssstuuniv.in</p>
-            </div>
-            <div >
-                <h4>JSS Science and Technology University</h4>
-                <p>0821-123456</p>
-                <p>0821-678987</p>
-                <p>contact@jssstuuniv.in</p>
-            </div>
-            <div>
-                    <h4>JSS Science and Technology University</h4>
-                    <p>0821-123456</p>
-                    <p>0821-678987</p>
-                    <p>contact@jssstuuniv.in</p>
-                </div>
-        </div>
 
+        <section id="links">
+            <div class="contact">
+                <h4>Study at JSS STU</h4>
+                <p>About Us</p>
+                <p>Admissions</p>
+                <p>Calender of Events</p>
+            </div>
+            <div class="contact">
+                <h4>Quick Links</h4>
+                <p>Sports</p>
+                <p>Events</p>
+                <p>Student Clubs</p>
+            </div>
+            <div class="contact3">
+                <h4>Contact Us</h4>
+                <p>0821-123456</p>
+                <p>0821-789101</p>
+                <p>contact@jssstuniv.in</p>
+            </div>
         </section>
     </main>
     <footer>
-        © Copyright JSS STU 2023.
+        <marquee>&copy; JSSSTU 2024.</marquee>
     </footer>
 </body>
 </html>
