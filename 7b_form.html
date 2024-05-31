@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <div class="container" align="center">
+    <h1>FORM VALIDATION</h1>
+
+    <form>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+    <input type="email" id="email" placeholder="Enter your email"><br><br>
+    <input type="tel" id="num" placeholder="Enter your contact no."><br><br>
+    
+    <select id="gender">
+        <option value="">Select your gender</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+    </select><br><br>
+
+    <input type="text" id="color" placeholder="Enter your favourite color"><br><br>
+
+    <button type="button" onclick="validateForm()">Submit</button>
+
+    </form>
+</div>
+    <script>
+        function validateForm(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var num=document.getElementById("num").value;
+            var gender=document.getElementById("gender").value;
+            var color=document.getElementById("color").value;
+
+            if(name===""){
+                alert("Enter your name correctly!");
+            }
+            if(email==="" || !email.includes(".") || !email.includes("@")){
+                alert("Enter your email correctly!");
+            }
+            if(num==="" || num.length!==10){
+                alert("Enter your contact number correctly!");
+            }
+            if(gender===""){
+                alert("Please select your gender");
+            }
+            if(color===""){
+                alert("Please enter your color!");
+            }
+
+            var info= "Name: "+name+"\n"+
+                        "Email: "+email+"\n"+
+                        "Mobile no: "+num+"\n"+
+                        "Gender: "+gender+"\n"+
+                        "Favourite color: "+color+"\n";
+
+            alert(`${info}`);
+        }
+    </script>
+
+
+</body>
+</html>
