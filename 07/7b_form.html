@@ -22,8 +22,12 @@
 
     <input type="text" id="color" placeholder="Enter your favourite color"><br><br>
 
-    <button type="button" onclick="validateForm()">Submit</button>
+    <button type="button" onclick="validateForm()">Submit</button><br><br>
 
+    <div id="display-text" style="box-shadow: 0 0 10px; width:25%">
+        
+    </div>
+        
     </form>
 </div>
     <script>
@@ -55,11 +59,15 @@
                         "Mobile no: "+num+"\n"+
                         "Gender: "+gender+"\n"+
                         "Favourite color: "+color+"\n";
-
+            
+            document.getElementById("display-text").innerHTML="";
+            document.getElementById("display-text").innerHTML=`<p>Name: ${name}<br>
+                                                                Email: ${email}<br>
+                                                                Gender: ${gender}<br>
+                                                                Number: ${num}<br>
+                                                                Favourite color: ${color}</p>`;
             alert(`${info}`);
         }
     </script>
-
-
 </body>
 </html>
