@@ -1,0 +1,20 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+footer {
+    font-size: 14px;
+    padding: 5px;
+}

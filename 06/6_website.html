@@ -3,42 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSSSTU</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
     <style>
-        .nav{
+        .nav {
             display: flex;
             justify-content: space-evenly;
             background-color: aqua;
             height: 30px;
             align-items: center;
-            padding-left: 20%; 
+            padding-left: 20%;
             padding-right: 20%;
         }
-        a{
+
+        a {
             margin-left: 5px;
         }
-        section{
+
+        section {
             margin-top: 40px;
             text-align: center;
             align-items: center;
         }
-        #about{
-            background-color:rgb(245, 93, 38);
+
+        #about {
+            background-color: rgb(245, 93, 38);
             height: 150px;
             padding-top: 10px;
         }
-        #links{
+
+        #links {
             display: flex;
             text-align: center;
             justify-content: center;
             padding: 20px;
             background-color: cornsilk;
         }
-        .contact{
+
+        .contact {
             padding-right: 10%;
         }
-        footer{
+
+        footer {
             background-color: rgb(223, 169, 219);
             height: 20px;
             align-items: center;
@@ -49,7 +56,7 @@
 </head>
 
 <body>
-    <div class="nav">
+    <div class="nav" style="border-bottom: 2px solid black;"> <!-- Inline CSS -->
         <a href="#about">About</a>
         <a href="#">Academic</a>
         <a href="#">Programmes</a>
@@ -61,9 +68,9 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            JSS Science and Technology(Formerly known as Sri Jayachamarajendra College of Engineering)
-            offers various courses across different branches of Engineering which include Computer Science, 
-            Information Science, Electronics and Communication etc. It also has various sports, cultural and 
+            JSS Science and Technology (Formerly known as Sri Jayachamarajendra College of Engineering)
+            offers various courses across different branches of Engineering which include Computer Science,
+            Information Science, Electronics and Communication etc. It also has various sports, cultural and
             technical clubs which the students can join as per their interest.
         </section>
 
@@ -72,7 +79,7 @@
                 <h4>Study at JSS STU</h4>
                 <a href="#">About Us</a><br><br>
                 <a href="#">Admissions</a><br><br>
-                <a href="#">Calender of Events</a>
+                <a href="#">Calendar of Events</a>
             </div>
             <div class="contact">
                 <h4>Quick Links</h4>
@@ -80,7 +87,7 @@
                 <a href="#">Events</a><br><br>
                 <a href="#">Student Clubs</a>
             </div>
-            <div class="contact3">
+            <div class="contact3" style="color: blue;"> <!-- Inline CSS -->
                 <h4>Contact Us</h4>
                 <p>0821-123456</p>
                 <p>0821-789101</p>
@@ -92,4 +99,5 @@
         <marquee>&copy; JSSSTU 2024.</marquee>
     </footer>
 </body>
+
 </html>
