@@ -34,9 +34,6 @@
            }else if(sub == "") {
                alert( "Please enter subject code" );
                return false;
-           }else if(t1>20 || t2>20 || t3 >20){
-               alert("Invalid Marks. Marks range : 0 - 20.Enter Again.");
-               return false;
            }else if(isNaN(t1)){
                alert("Please provide Test-1 marks");
                return false;
@@ -45,6 +42,9 @@
                return false;
            }else if(isNaN(t3)){
                alert("Please provide Test-3 marks");
+               return false;
+           }else if(t1>20 || t2>20 || t3 >20){
+               alert("Invalid Marks. Marks range : 0 - 20.Enter Again.");
                return false;
            }
            var max1 = Math.max(t1,t2,t3);
