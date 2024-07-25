@@ -7,66 +7,62 @@
 </head>
 <body>
     <div class="container" align="center">
-    <h1>FORM VALIDATION</h1>
+        <h1>FORM VALIDATION</h1>
 
-    <form>
-    <input type="text" id="name" placeholder="Enter your name"><br><br>
-    <input type="email" id="email" placeholder="Enter your email"><br><br>
-    <input type="tel" id="num" placeholder="Enter your contact no."><br><br>
-    
-    <select id="gender">
-        <option value="">Select your gender</option>
-        <option value="Female">Female</option>
-        <option value="Male">Male</option>
-    </select><br><br>
+        <form>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+            <input type="tel" id="num" placeholder="Enter your contact no."><br><br>
+            <select id="gender">
+                <option value="" disabled selected hidden>Select your gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select><br><br>
+            <input type="text" id="color" placeholder="Enter your favourite color"><br><br>
 
-    <input type="text" id="color" placeholder="Enter your favourite color"><br><br>
+            <button type="button" onclick="validateForm()">Submit</button><br><br>
+        </form>
 
-    <button type="button" onclick="validateForm()">Submit</button><br><br>
-
-    <div id="display-text" style="box-shadow: 0 0 10px; width:25%">
-        
+        <textarea id="output" rows="8" cols="40" placeholder="Entered information will be displayed here" readonly></textarea><br><br>
     </div>
-        
-    </form>
-</div>
+
     <script>
         function validateForm(){
-            var name=document.getElementById("name").value;
-            var email=document.getElementById("email").value;
-            var num=document.getElementById("num").value;
-            var gender=document.getElementById("gender").value;
-            var color=document.getElementById("color").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var num = document.getElementById("num").value;
+            var gender = document.getElementById("gender").value;
+            var color = document.getElementById("color").value;
 
-            if(name===""){
+            if(name === ""){
                 alert("Enter your name correctly!");
+                return;
             }
-            if(email==="" || !email.includes(".") || !email.includes("@")){
+            if(email === "" || !email.includes(".") || !email.includes("@")){
                 alert("Enter your email correctly!");
+                return;
             }
-            if(num==="" || num.length!==10){
+            if(num === "" || num.length !== 10){
                 alert("Enter your contact number correctly!");
+                return;
             }
-            if(gender===""){
+            if(gender === ""){
                 alert("Please select your gender");
+                return;
             }
-            if(color===""){
-                alert("Please enter your color!");
+            if(color === ""){
+                alert("Please enter your favourite color!");
+                return;
             }
 
-            var info= "Name: "+name+"\n"+
-                        "Email: "+email+"\n"+
-                        "Mobile no: "+num+"\n"+
-                        "Gender: "+gender+"\n"+
-                        "Favourite color: "+color+"\n";
-            
-            document.getElementById("display-text").innerHTML="";
-            document.getElementById("display-text").innerHTML=`<p>Name: ${name}<br>
-                                                                Email: ${email}<br>
-                                                                Gender: ${gender}<br>
-                                                                Number: ${num}<br>
-                                                                Favourite color: ${color}</p>`;
-            alert(`${info}`);
+            var info = "Name: " + name + "\n" +
+                         "Email: " + email + "\n" +
+                         "Contact Number: " + num + "\n" +
+                         "Gender: " + gender + "\n" +
+                         "Favourite Color: " + color;
+                        
+            var output = document.getElementById("output");
+            output.value = info;
         }
     </script>
 </body>
