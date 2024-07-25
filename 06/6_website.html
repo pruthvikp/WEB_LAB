@@ -28,9 +28,17 @@
         }
 
         #about {
-            background-color: rgb(245, 93, 38);
-            height: 150px;
+            background-color: orangered;
+            opacity: 75%;
+            color: black;
+            height: 200px;
             padding-top: 10px;
+        }
+
+        .about-content{
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #links {
@@ -41,8 +49,21 @@
             background-color: cornsilk;
         }
 
-        .contact {
-            padding-right: 10%;
+        .contact{
+            margin: 20px;
+        }
+
+        .university-text{
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            padding: 20px;
+            margin: auto;
+            text-align: justify;
+        }
+
+        #campus, #student-life{
+            text-align: left;
         }
 
         footer {
@@ -66,12 +87,36 @@
         <a href="#links">Contact</a>
     </div>
     <main>
+        
+        <div class="news-slider">
+            <p style="background-color: lavenderblush; height: 50px;">News: 
+                <marquee style="align-items: center;">Latest News: Admissions Open for 2024 | New Research Lab Inaugurated | Annual Sports Meet Next Month</marquee>
+            </p>
+        </div>
+
         <section id="about">
             <h2>About</h2>
-            JSS Science and Technology (Formerly known as Sri Jayachamarajendra College of Engineering)
+            <p class="about-content">JSS Science and Technology (Formerly known as Sri Jayachamarajendra College of Engineering)
             offers various courses across different branches of Engineering which include Computer Science,
             Information Science, Electronics and Communication etc. It also has various sports, cultural and
-            technical clubs which the students can join as per their interest.
+            technical clubs which the students can join as per their interest.</p>
+        </section>
+
+        <section class="university-text">
+            <div>
+                <h3 id="campus">Our Campus</h3>
+                <p>
+                    JSS Science and Technology University is renowned for its state-of-the-art campus with modern infrastructure and facilities.
+                    The campus is spread over several acres and includes advanced laboratories, libraries, and sports complexes.
+                </p>
+            </div>
+            <div>
+                <h3 id="student-life">Student Life</h3>
+                <p>
+                    At JSSSTU, student life is vibrant and diverse. We offer a wide range of extracurricular activities including sports, cultural events,
+                    and technical clubs. Our students are encouraged to participate and excel in various domains.
+                </p>
+            </div>
         </section>
 
         <section id="links">
@@ -87,11 +132,11 @@
                 <a href="#">Events</a><br><br>
                 <a href="#">Student Clubs</a>
             </div>
-            <div class="contact3" style="color: blue;"> <!-- Inline CSS -->
+            <div class="contact" style="color: blue;"> <!-- Inline CSS -->
                 <h4>Contact Us</h4>
-                <p>0821-123456</p>
-                <p>0821-789101</p>
-                <p>contact@jssstuniv.in</p>
+                <a href="#" style="text-decoration: none; color: black;">0821-123456</a><br><br>
+                <a href="#" style="text-decoration: none; color: black;">0821-789101</a><br><br>
+                <a href="#" style="text-decoration: none; color: black;">contact@jssstuniv.in</a>
             </div>
         </section>
     </main>
