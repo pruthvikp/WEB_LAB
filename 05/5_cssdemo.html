@@ -7,16 +7,12 @@
     <style>
         /* General styles */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: whitesmoke;
         }
         header {
             background-color: #5f1330;
             color: white;
-            padding: 10px 0;
+            padding: 10px;
             text-align: center;
         }
         section {
@@ -24,39 +20,15 @@
             padding: 20px;
             background-color: white;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px;
         }
 
-        /* Font styles */
-        .font-serif {
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .font-sans-serif {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .font-monospace {
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        /* Background image repeat */
-        .background-no-repeat, .background-repeat, .background-repeat-x, .background-repeat-y {
+        .bg{
             width: 100px;
             height: 100px;
             margin: 10px;
             display: inline-block;
             background-image: url('https://via.placeholder.com/50');
-        }
-        .background-no-repeat {
-            background-repeat: no-repeat;
-        }
-        .background-repeat {
-            background-repeat: repeat;
-        }
-        .background-repeat-x {
-            background-repeat: repeat-x;
-        }
-        .background-repeat-y {
-            background-repeat: repeat-y;
         }
 
         /* Link styles */
@@ -76,16 +48,6 @@
             color: green; 
         }
 
-        /* Visibility */
-        .visible {
-            visibility: visible;
-            padding: 10px;
-            background-color: lightgreen;
-        }
-        .hidden {
-            visibility: hidden;
-        }
-
     </style>
 </head>
 
@@ -95,16 +57,16 @@
     </header>
     <section>
         <h2>Different Font Styles</h2>
-        <p class="font-serif">This is a paragraph with a serif font.</p>
-        <p class="font-sans-serif">This is a paragraph with a sans-serif font.</p>
-        <p class="font-monospace">This is a paragraph with a monospace font.</p>
+        <p style="font-family: serif;">This is a paragraph with a serif font.</p>
+        <p style="font-family: sans-serif;">This is a paragraph with a sans-serif font.</p>
+        <p style="font-family: Courier;">This is a paragraph with a courier(monospace) font.</p>
     </section>
     <section>
         <h2>Background Image Repeat</h2>
-        <div class="background-no-repeat">No Repeat</div>
-        <div class="background-repeat">Repeat</div>
-        <div class="background-repeat-x">Repeat-X</div>
-        <div class="background-repeat-y">Repeat-Y</div>
+        <div class="bg" style="background-repeat: no-repeat;">No Repeat</div>
+        <div class="bg" style="background-repeat: repeat;">Repeat</div>
+        <div class="bg" style="background-repeat: repeat-x;">Repeat-X</div>
+        <div class="bg" style="background-repeat: repeat-y;">Repeat-Y</div>
     </section>
     <section>
         <h2>Styled Links</h2>
@@ -115,8 +77,8 @@
     </section>
     <section>
         <h2>Element Visibility</h2>
-        <div class="visible">This element is visible.</div>
-        <div class="hidden">This element is hidden.</div>
+        <div class="visible" style="visibility: visible; background-color: lightgreen; padding: 10px;">This element is visible.</div>
+        <div class="hidden" style="visibility: hidden;">This element is hidden.</div>
     </section>
 </body>
 </html>
