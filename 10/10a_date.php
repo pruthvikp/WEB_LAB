@@ -13,6 +13,5 @@
         echo $today;
         ?>
     </date>
-
 </body>
 </html>
