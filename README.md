@@ -11,7 +11,7 @@ Questions:
 
 5. Create your resume using HTML tags also experiment with colors, text (bold, italic and different headings), image, link, size and also other related tags.
 
-6. Design a web page using CSS with suitable design for the following:
+6. Design a web page using CSS with suitable design for the following:  
 I. Demonstrate different font styles  
 II. Control the repetition of image with background-repeat property  
 III. Define style for links as a: link, a: active, a: hover, a: visited  
