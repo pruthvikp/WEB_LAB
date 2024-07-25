@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calc</title>
     <style>
+        h1{
+            text-align: center;
+        }
         table{
             border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
         }
         input{
             margin: 5px;
@@ -19,6 +25,7 @@
     </style>
 </head>
 <body>
+    <h1>Calculator</h1>
     <table>
         <tr>
             <td colspan="3"><input style="color: black;" type="text" id="in" class="input-display"> </td>
@@ -62,6 +69,7 @@
             q=eval(p);
             document.getElementById('in').value=q;
         }
+        
     </script>
 </body>
 </html>
