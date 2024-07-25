@@ -17,7 +17,7 @@ II. Control the repetition of image with background-repeat property
 III. Define style for links as a: link, a: active, a: hover, a: visited
 IV. Demonstrate Element visibility property
 
-6 Design a web page of your institute (Ref: Sl. No. 1) with an attractive background color, text color, an Image, font etc. Use External, Internal, and Inline CSS to format the page.
+6. Design a web page of your institute (Ref: Sl. No. 1) with an attractive background color, text color, an Image, font etc. Use External, Internal, and Inline CSS to format the page.
 
 7. a) Develop simple calculator for Addition, Subtraction, Multiplication and Division operation using JavaScript.
    b) Create HTML Page that contains form with fields Name, Email, Mobile No, Gender, Favourite Colour and a button. Write a JavaScript code to validate all the fields when the button is clicked, later combine and display the information in textbox.
@@ -31,8 +31,8 @@ III. Password (must be eight characters including one uppercase letter, one spec
 alphanumeric characters)
 IV. E-mail (should not contain invalid addresses)
 
-10 a) Write a PHP script to display today’s date in dd-mm-yyyy format.
-   b) Write a PHP script to check whether the number is prime or not when user input a valid number from client side.
+10. a) Write a PHP script to display today’s date in dd-mm-yyyy format.
+    b) Write a PHP script to check whether the number is prime or not when user input a valid number from client side.
    
 11. Create HTML page that contain textbox, submit / reset button. Write PHP script to display this information and also store into a text file.
     
