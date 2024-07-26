@@ -13,7 +13,7 @@
     <h1>Login</h1>
     <form method="POST">
         <label>Username:</label>
-        <input name="username"><br><br>
+        <input type="text" name="username"><br><br>
         <label for="password">Password:</label>
         <input type="password" name="password"><br><br>
         <button >Login</button>
